@@ -5,7 +5,7 @@ var express = require('express'),
 var mongoose = require('mongoose');
 
 //Set up default mongoose connection
-var mongoDB = 'mongodb://ds149535.mlab.com:49535/chatdb';
+var mongoDB = 'mongodb://testuser:testuserpw@ds149535.mlab.com:49535/chatdb';
 mongoose.connect(mongoDB, {
   useMongoClient: true
 });

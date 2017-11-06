@@ -19,8 +19,8 @@ var exports = {
 	    });
 
 		newUser.save(function(err){
-			if(err)
-				return callback({success: false, error: "user already exists" });
+			if(err){console.log(err);
+				return callback({success: false, error: "user already exists" });}
 			return callback({success: true, error: ""});
 		});
 	},
